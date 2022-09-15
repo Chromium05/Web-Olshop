@@ -1,0 +1,236 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+button {
+	border-radius: 20px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(.97);
+}
+
+nav {
+	padding: 0 2em;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.right {
+	display: flex;
+	align-items: center;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+}
+
+input[type='search'] {
+	border: none;
+	background: gainsboro;
+	height: 2em;
+	width: 14em;
+	padding: 3px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+input[type='search']::placeholder {
+	color: darkgrey;
+}
+
+input[type='search']:focus {
+	outline: none;
+}
+
+.search span {
+	background: #38B6FF;
+	height: 1.1em;
+	font-size: 19px;
+	padding: 3px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+}
+
+.icons span {
+	font-size: 23px;
+	margin: 0 5px 0;
+}
+
+.right span:hover {
+	cursor: pointer;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+li a {
+	color: lightslategrey;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: 0.25s;
+}
+
+li a:hover, li a:focus {
+	color: black;
+	border-bottom: 1px solid #38B6FF;
+}
+
+.home {
+	padding: 50px 0;
+	width: 70%;
+	margin: auto;
+	display: inline-block;
+}
+
+.home h1 {
+	font-size: 2.6em;
+	width: 7.3em;
+	margin-bottom: 0;
+}
+
+.home p {
+	font-size: 16px;
+	width: 20em;
+}
+
+.jumbo {
+	width: 400px;
+	height: 400px;
+	background: url(Pic/Hero%20Image.png) no-repeat;
+	background-size: cover;
+}
+
+.goto {
+	height: 2.7em;
+	width: 11em;
+	font-family: inherit;
+	background: linear-gradient(to right, #38B6FF, #3996FF);
+	color: snow;
+	border: none;
+	border-radius: 25px;
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+.goto:hover {
+	box-shadow: 0 0 13px 2px rgba(56, 182, 255,.4);
+}
+
+.men-catalog {
+	padding: 5px 0 50px;
+	background: radial-gradient(circle farthest-corner at top right, #38B6FF, #3996FF);
+}
+
+.catalog {
+	color: snow;
+	font-size: 2em;
+	margin-left: 2.5em;
+}
+
+.product-container {
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.product {
+	height: 20rem;
+	width: 15rem;
+	overflow: hidden;
+	border-radius: 17px;
+}
+
+.pic.no1 {
+	background: url('https://id-test-11.slatic.net/p/75b954ef71dc82b73ea3bb748c932e94.jpg') no-repeat;
+	background-size: cover;
+	height: 20rem;
+	width: 15rem;
+}
+
+.pic.no2 {
+	background: url('https://images.thenorthface.com/is/image/TheNorthFace/NF0A5GLK_HDC_hero?hei=650&wid=555&qlt=50&resMode=sharp2&op_sum=0.9,1.0,8,0') no-repeat;
+	background-size: cover;
+	height: 20rem;
+	width: 15rem;
+}
+
+.pic.no3 {
+	background: url('https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/0a877e4986f8cbc00bebc6da77404032b1fe4f11_xxl-1.jpg') no-repeat;
+	background-size: cover;
+	height: 20rem;
+	width: 15rem;
+}
+
+.pic.no4 {
+	background: url('http://www.craftyparalegal.com/wp-content/uploads/2021/05/bags-backpacks-nike-mens-nike-sportswear-elemental-backpack-black_4.jpg') no-repeat;
+	background-size: cover;
+	height: 20rem;
+	width: 15rem;
+}
+
+.info {
+	width: 100%;
+	height: 110%;
+	background: rgba(0,0,0,.5);
+	color: snow;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+.info button {
+	height: 2.5em;
+	width: 9em;
+	font-family: inherit;
+	background: linear-gradient(to right, #38B6FF, #3996FF);
+	color: snow;
+	border: none;
+	border-radius: 20px;
+}
+
+.info p {
+	font-size: 14px;
+}
+
+.info p:hover, h2:not(.catalog):hover {
+	cursor: default;
+}
+
+.product:hover .info {
+	transform: translateY(-327px);
+}
+
+.next, .previous {
+	text-align: center;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	border: none;
+}
+
+.next span, .previous span {
+	font-size: 30px;
+	margin-top: 3px;
+	color: #38B6FF;
+}
